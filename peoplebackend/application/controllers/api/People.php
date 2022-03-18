@@ -10,6 +10,7 @@ class People extends REST_Controller {
     {
         parent::__construct();
         $this->load->database();
+        header("Access-Control-Allow-Origin: *"); //!!!
     }
 
     public function index_get($id = 0)
